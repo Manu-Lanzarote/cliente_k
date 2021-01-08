@@ -39,7 +39,7 @@ import "./App.css";
 import MyMapComponent from "./components/landing/contacto/MyMapComponent";
 
 function App() {
-  return <MyMapComponent isMarkerShown />; // Just only Map
+  return <MyMapComponent isMarkerShown />;
 }
 
 export default App;

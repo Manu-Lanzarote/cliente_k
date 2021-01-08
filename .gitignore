@@ -26,4 +26,4 @@ yarn-error.log*
 /public/manu.txt
 /public/snippets.txt
 
-/src/components/landing/google.js
+/src/components/landing/contacto/google.js
