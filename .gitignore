@@ -22,5 +22,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# mis archivos
 /public/manu.txt
 /public/snippets.txt
+
+/src/components/landing/google.js
