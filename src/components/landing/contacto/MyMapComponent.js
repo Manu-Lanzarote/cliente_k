@@ -5,11 +5,11 @@ import {
   GoogleMap,
   Marker,
 } from "react-google-maps";
+import myKeys from "../myKeys";
 
 const MyMapComponent = compose(
   withProps({
-    googleMapURL:
-      "https://maps.googleapis.com/maps/api/js?key=""""""AQUÍ MI KEY""""""&callback=initMap&libraries=&v=weekly",
+    googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${myKeys.mapsKey}&callback=initMap&libraries=&v=weekly`,
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `100vh`, width: `40vw` }} />,
     mapElement: <div style={{ height: `100%` }} />,
