@@ -11,7 +11,7 @@ const MyMapComponent = compose(
   withProps({
     googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${myKeys.mapsKey}&callback=initMap&libraries=&v=weekly`,
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `100vh`, width: `40vw` }} />,
+    containerElement: <div style={{ height: `80vh`, width: `80%` }} />,
     mapElement: <div style={{ height: `100%` }} />,
   }),
   withScriptjs,

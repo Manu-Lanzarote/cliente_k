@@ -45,7 +45,7 @@ nav {
   font-family: "Dosis", sans-serif;
   font-size: x-large;
   line-height: 150%;
-  padding: 20px 0 140px;
+  padding: 20px 0 80px;
 }
 li {
   list-style: none;
@@ -257,4 +257,65 @@ hr {
 
 .card_body {
   display: flex;
+}
+
+/* CONTACT */
+.contact {
+  display: flex;
+  background-image: url("./components/landing/uploads_k/Kalypse-marque-createur.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.mapa {
+  opacity: 0.8;
+}
+
+.sub_contact {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FORMULARIO */
+
+.form {
+  margin: 5% 0;
+}
+
+.h1_form {
+  font-size: 35px;
+}
+
+.div_2 {
+  padding: 10px 0;
+}
+
+.input_size {
+  height: 35px;
+  background-color: rgba(12, 12, 12, 0.637);
+  border: gray 1px solid;
+  color: white;
+}
+.input_size:focus {
+  background-color: black;
+  border: black;
+  color: white;
+}
+
+.div_text {
+  padding: 0;
+}
+
+.text_area {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  background-color: rgba(12, 12, 12, 0.637);
+}
+
+.btn_form {
+  background-color: rgba(12, 12, 12, 0.637);
+  border: gray 1px solid;
 }

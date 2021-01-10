@@ -35,6 +35,12 @@ const MenuNav = () => {
                 HISTOIRE
               </Link>
             </li>
+            <hr />
+            <li>
+              <Link to="./Contact" className="menu_link">
+                CONTACT
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
