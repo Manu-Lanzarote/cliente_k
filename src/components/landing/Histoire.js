@@ -1,7 +1,7 @@
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import LOGO_FINAL_KALYPSE_H from "./uploads_k/LOGO-FINAL-KALYPSE-H.png";
+import LOGO_FINAL_KALYPSE_W from "./uploads_k/LOGO-FINAL-KALYPSE-W.png";
 import image_collage1 from "./uploads_k/image-collage1.jpg";
 import image_collage0 from "./uploads_k/image-collage0.jpg";
 import image_collage2 from "./uploads_k/image-collage2.jpg";
@@ -11,7 +11,7 @@ const Histoire = () => {
   return (
     <div className="main_hist">
       <div className="hero_h">
-        <img src={LOGO_FINAL_KALYPSE_H} alt="Kalypse" className="img_hero" />
+        <img src={LOGO_FINAL_KALYPSE_W} alt="Kalypse" className="img_hero" />
       </div>
       <Accordion defaultActiveKey="0" className="acordeon">
         <Card>

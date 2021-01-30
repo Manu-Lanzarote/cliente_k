@@ -21,13 +21,22 @@ h5 {
   height: 100vh;
   max-height: 100vh;
   display: flex;
+  /* Propiedad overflow para que funcione el sticky del sidebar */
+  overflow: auto;
 }
 .contenedor_menu_vertical {
   width: 20vw;
   max-width: 20vw;
   min-height: 100vh;
   border-right: 1px solid rgb(53, 53, 53);
+  display: flex;
+  justify-content: center;
+  /* Sticky con FlexBox*/
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
 }
+
 .contenedor_contenidos {
   width: 80vw;
   min-height: 100vh;
@@ -38,14 +47,14 @@ h5 {
 .contenedor_menu_imagen {
   display: flex;
   justify-content: center;
-  padding: 30px 5px;
+  padding: 20px 5px;
 }
 nav {
   text-align: center;
   font-family: "Dosis", sans-serif;
-  font-size: x-large;
+  font-size: 1.3rem;
   line-height: 150%;
-  padding: 20px 0 80px;
+  padding: 20px 0 50px;
 }
 li {
   list-style: none;
@@ -55,6 +64,10 @@ li {
   color: gray;
 }
 .menu_link:hover {
+  color: #29b3d2;
+  text-decoration: none;
+}
+.menu_link:focus {
   color: #29b3d2;
   text-decoration: none;
 }
@@ -141,7 +154,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(5, 5, 29, 0.822);
+  background-color: rgba(5, 5, 29, 0.329);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -216,7 +229,7 @@ hr {
   padding: 6%;
 }
 .img_hero {
-  max-width: 20vw;
+  max-width: 10vw;
 }
 
 .card {
@@ -227,7 +240,7 @@ hr {
 .img_hist {
   width: 100%;
   min-width: 100%;
-  height: 220px;
+  height: 200px;
 }
 
 .histoire {
@@ -268,7 +281,7 @@ hr {
 }
 
 .mapa {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .sub_contact {
@@ -313,9 +326,305 @@ hr {
   width: 100%;
   margin: 10px 0;
   background-color: rgba(12, 12, 12, 0.637);
+  min-height: 100px;
+  color: white;
 }
 
 .btn_form {
   background-color: rgba(12, 12, 12, 0.637);
   border: gray 1px solid;
+}
+
+/* BOUTIQUE */
+
+.boutique {
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  padding: 30px;
+}
+
+.div_logo {
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+  z-index: 10;
+}
+
+.productos {
+  cursor: pointer;
+  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.3);
+  min-width: 15vw;
+}
+
+.productos:hover {
+  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.589);
+  transform: scale(1.05);
+  filter: hue-rotate(100deg);
+}
+
+.productos h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+  color: rgba(22, 22, 22, 0.781);
+}
+.productos h2:hover {
+  color: #29b3d2;
+}
+
+.productos p {
+  font-weight: bold;
+  color: gray;
+  text-align: center;
+}
+
+.texto_boutique {
+  background-color: white;
+  color: #181a1c;
+  padding: 30px;
+}
+
+.cabecera {
+  text-align: center;
+}
+
+.linea {
+  display: block;
+  margin: 20px auto;
+}
+
+.parrafos {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  padding: 30px;
+}
+
+.sub_parr {
+  padding: 0 20px;
+}
+
+/* MENU HORIZONTAL DE LA BOUTIQUE EN LIGNE */
+
+.header_shop {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.menu_shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 0 0;
+  background-color: #181a1c;
+}
+
+.shop_enlaces li {
+  display: inline-block;
+  padding: 0 2vw;
+}
+
+.shop_enlaces a {
+  color: gray;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.3rem;
+}
+.shop_enlaces a:hover {
+  color: #29b3d2;
+  text-decoration: none;
+}
+
+.shop_enlaces a:focus {
+  color: #29b3d2;
+  text-decoration: none;
+}
+
+/* FORMULARIO ADMIN */
+
+.form_admin {
+  min-width: 300px;
+  margin: 30px;
+}
+
+.input_size2 {
+  height: 35px;
+  background-color: rgba(12, 12, 12, 0.637);
+  border: gray 1px solid;
+  color: white;
+  margin: 10px;
+}
+/* Boton del formulario de administración*/
+.btn_admin {
+  margin-top: 20px;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+/* PANEL DE CONTROL */
+.panel_de_control {
+  background-color: white;
+  color: #181a1c;
+}
+
+.menu_admin {
+  background-color: #181a1c;
+}
+
+/* Read.js */
+
+.read {
+  padding: 0 50px 50px 50px;
+}
+
+.read h1 {
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+}
+
+/* ReadProducts.js */
+.cont_pro_admin {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.cont_pro_admin:hover {
+  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.productos1 {
+  cursor: pointer;
+  border: 1px solid gray;
+  width: 120px;
+  min-height: 160px;
+}
+
+.productos1 h2 {
+  margin: 0 auto;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2px;
+  color: rgba(22, 22, 22, 0.781);
+}
+
+.imagen {
+  width: 100%;
+}
+.imagen:hover {
+  filter: hue-rotate(100deg);
+}
+
+.botones_admin {
+  display: flex;
+  margin-top: 10px;
+}
+
+.btn_modi,
+.btn_sup {
+  background-color: #29b3d283;
+  min-width: 120px;
+  padding: 2px 5px;
+}
+.btn_sup {
+  background-color: #f7875388;
+  margin-left: 30px;
+}
+
+.btn_modi:hover {
+  background-color: #3f80ca;
+  color: white;
+}
+.btn_sup:hover {
+  background-color: red;
+  color: white;
+}
+
+.mostrar_producto {
+  margin-top: 30px;
+  border: 2px solid gray;
+  padding: 20px;
+  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+.titulos {
+  color: #29b3d2;
+  font-weight: bold;
+}
+
+/* AdminPage.js */
+.fondo {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url("./components/landing/uploads_k/LOGO-FINAL-KALYPSE-H.png");
+  background-repeat: no-repeat;
+  background-position: 35%;
+}
+
+/* MenuAdmin.js*/
+a.noactivo:hover {
+  text-decoration: none;
+  color: #29b3d2;
+}
+a.noactivo {
+  color: gray;
+}
+
+/* MostrarProducto.js */
+.h3 {
+  font-size: 1.3em;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* ESTILOS CSS DE LA PÁGINA DE PRODUCTO ÚNICO */
+/* Estilos SingleMain.js */
+.single_main {
+  background-color: white;
+  padding: 30px 10%;
+}
+
+.sp_cont1 {
+  display: flex;
+}
+.sp_cont2 {
+  width: 60%;
+}
+.sp_cont3 {
+  width: 40%;
+  background-color: #29b3d2;
+}
+
+/* Estilos contenedor imágenes prododucto único */
+.conti_product {
+  display: flex;
+}
+.cont_lateral {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cont_lateral img {
+  border: solid 1px gray;
+  margin: 5px 0;
+}
+
+.cont_principal {
+  width: 80%;
 }

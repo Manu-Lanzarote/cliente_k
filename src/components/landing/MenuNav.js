@@ -37,6 +37,12 @@ const MenuNav = () => {
             </li>
             <hr />
             <li>
+              <Link to="./Boutique" className="menu_link">
+                BOUTIQUE EN LIGNE
+              </Link>
+            </li>
+            <hr />
+            <li>
               <Link to="./Contact" className="menu_link">
                 CONTACT
               </Link>
@@ -50,9 +56,30 @@ const MenuNav = () => {
           <a href="tel:+34639056797">
             <i className="fas fa-phone-square-alt fab"></i>
           </a>
-          <i className="fab fa-facebook-square"></i>
-          <i className="fab fa-instagram-square"></i>
-          <i className="fab fa-pinterest-square"></i>
+          <a
+            href="https://www.facebook.com/kalypse.fr/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-facebook-square"></i>
+          </a>
+          <a
+            href="https://www.pinterest.fr/bykalypse/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-pinterest-square"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/kalypse?trk=hp-feed-company-name"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <Link to="./Kalypse_admin_area" className="menu_link">
+            <i className="fas fa-unlock fab"></i>
+          </Link>
         </div>
         <div>
           <i className="copy">© Copyright 2021 - KALYPSE ®</i>
