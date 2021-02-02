@@ -16,13 +16,22 @@ const ReadProducts = () => {
   // Variable de estado para renderizar todos los productos
   const [data, setData] = useState([]);
   // Variable de estado que renderiza los datos del producto que clicka el usuario
-  const [nombre, setNombre] = useState("COMBINAISON LADYSKAF");
+  // Por defecto "COMBINAISON LADYBUST"
+  const [nombre, setNombre] = useState("COMBINAISON LADYBUST");
+  //Variable de estado que sirve para renderizar automáticamente el navegador cuando se elimina un producto o se modifica.
+  //Pasamos boolean dentro de useEffect en la linea 30 y creo la función en la línea 32
+  //Por últimno la paso por props en la línea 60 a MostrarProducto.js
+  const [boolean, setBoolean] = useState(false);
 
   useEffect(() => {
     fetch("http://localhost:3001/productos/")
       .then((res) => res.json())
       .then((data) => setData(data));
-  }, []);
+  }, [boolean]);
+
+  function handleBoolean() {
+    setBoolean(!boolean);
+  }
 
   const mostrarProductos = data.map((producto) => {
     return (
@@ -47,8 +56,8 @@ const ReadProducts = () => {
     <div>
       {/* {mostrarProductos} renderiza la primera parte de la página - Las miniaturas de los productos */}
       {mostrarProductos}
-      {/* Y esta línea renderiza el producto que selecciona el usuario - (Por defecto "COMBINAISON LADYSKAF") y pasa por props a MostrarProducto.js el que selecciona el usuario */}
-      <MostrarProducto nombre={nombre} />
+      {/* Y esta línea renderiza/refresca el producto que selecciona el usuario - (Por defecto "COMBINAISON LADYBUST") y pasa por props a MostrarProducto.js el que selecciona el usuario */}
+      <MostrarProducto nombre={nombre} handleBoolean={handleBoolean} />
     </div>
   );
 };

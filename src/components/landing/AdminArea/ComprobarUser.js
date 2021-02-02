@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 import AdminPage from "../crudProductos/AdminPage";
 const ComprobarUser = () => {
   const [boolean, setBoolean] = useState(false);

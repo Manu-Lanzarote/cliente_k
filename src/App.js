@@ -10,6 +10,7 @@ import ModalApp from "./components/landing/ModalApp";
 import Contact from "./components/landing/Contact";
 import Tienda from "./components/landing/Tienda";
 import ModalAdmin from "./components/landing/ModalAdmin";
+import DetalleProducto from "./components/single_product/DetalleProducto";
 
 function App() {
   return (
@@ -43,26 +44,14 @@ function App() {
           <Route exact path="/Kalypse_admin_area">
             <ModalAdmin />
           </Route>
+          {/* Ruta producto único */}
+          {/* <Route exact path="/Boutique/:id">
+            <DetalleProducto />
+          </Route> */}
         </div>
       </div>
     </BrowserRouter>
   );
 }
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// POR CONSTRUIR - Página de producto único -
-
-// import SingleMain from "./single_product/SingleMain";
-
-// function App() {
-//   return (
-//     <div className="single_main">
-//       <SingleMain />
-//     </div>
-//   );
-// }
-
-//-----------------------------------------------------------------------
 
 export default App;

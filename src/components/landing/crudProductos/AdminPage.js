@@ -1,10 +1,10 @@
 import { BrowserRouter, Route } from "react-router-dom";
 import MenuAdmin from "./MenuAdmin";
-import Create from "./create/Create";
-import Delete from "./delete/Delete";
 import Read from "./read/Read";
-import Update from "./update/Update";
 import Fondo from "./Fondo";
+import PaginaCreate from "./create/PaginaCreate";
+import PaginaUpdate from "./update/PaginaUpdate";
+import PaginaDelete from "./delete/PaginaDelete";
 
 const AdminPage = () => {
   return (
@@ -22,13 +22,13 @@ const AdminPage = () => {
               <Read />
             </Route>
             <Route exact path="/nuevo_producto/">
-              <Create />
+              <PaginaCreate />
             </Route>
             <Route exact path="/editar_producto/">
-              <Update />
+              <PaginaUpdate />
             </Route>
             <Route exact path="/borrar_producto/">
-              <Delete />
+              <PaginaDelete />
             </Route>
           </div>
         </div>

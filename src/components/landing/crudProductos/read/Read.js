@@ -1,4 +1,3 @@
-import MostrarProducto from "./MostrarProducto";
 import ReadProducts from "./ReadProducts";
 
 const Read = () => {

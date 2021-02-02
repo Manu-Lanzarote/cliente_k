@@ -1,6 +1,3 @@
-import Delete from "../delete/Delete";
-import Update from "../update/Update";
-
 import { useState, useEffect } from "react";
 
 const MostrarProducto = (props) => {
@@ -73,10 +70,7 @@ const MostrarProducto = (props) => {
             <span className="titulos">IMAGEN 4:</span> {producto.imagenes[3]}
           </span>
         </div>
-        <div className="botones_admin">
-          <Update />
-          <Delete nombre={producto.nombre} />
-        </div>
+        <div className="botones_admin"></div>
       </div>
     );
   });

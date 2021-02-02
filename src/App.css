@@ -464,6 +464,7 @@ hr {
 /* Boton del formulario de administración*/
 .btn_admin {
   margin-top: 20px;
+  margin-right: 30px;
   padding: 2px 5px;
   border-radius: 5px;
 }
@@ -530,25 +531,15 @@ hr {
   display: flex;
   margin-top: 10px;
 }
-
-.btn_modi,
-.btn_sup {
-  background-color: #29b3d283;
-  min-width: 120px;
-  padding: 2px 5px;
-}
-.btn_sup {
-  background-color: #f7875388;
-  margin-left: 30px;
+.update_pro {
+  width: 70%;
 }
 
-.btn_modi:hover {
-  background-color: #3f80ca;
-  color: white;
-}
-.btn_sup:hover {
+.del {
   background-color: red;
-  color: white;
+}
+.del:hover {
+  color: rgb(97, 97, 97);
 }
 
 .mostrar_producto {
@@ -556,6 +547,13 @@ hr {
   border: 2px solid gray;
   padding: 20px;
   box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+.img_mostrar {
+  background-image: url("https://res.cloudinary.com/dhtnbqsni/image/upload/v1610479921/proyecto_k/ladyskaf1_cqzwyr.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .titulos {
@@ -593,38 +591,57 @@ a.noactivo {
 
 /* ESTILOS CSS DE LA PÁGINA DE PRODUCTO ÚNICO */
 /* Estilos SingleMain.js */
-.single_main {
-  background-color: white;
-  padding: 30px 10%;
-}
 
-.sp_cont1 {
+/* ++++++++++++++++++++++++++++++ */
+
+/* PaginaCreate.js */
+.pagina_create {
   display: flex;
 }
-.sp_cont2 {
-  width: 60%;
-}
-.sp_cont3 {
-  width: 40%;
-  background-color: #29b3d2;
+
+.create {
+  width: 50%;
+  padding: 20px;
 }
 
-/* Estilos contenedor imágenes prododucto único */
-.conti_product {
-  display: flex;
+.imput_c {
+  margin: 3px 0;
 }
-.cont_lateral {
-  width: 20%;
+
+.img_create {
+  background-image: url("https://res.cloudinary.com/dhtnbqsni/image/upload/v1610479919/proyecto_k/james1_al5vvx.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* PaginaUpdate.js */
+.img_update {
+  background-image: url("https://res.cloudinary.com/dhtnbqsni/image/upload/v1610479921/proyecto_k/ladybust3_yvhr4g.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* PaginaDelete.js */
+.suprimir {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 30% 30px;
 }
-.cont_lateral img {
-  border: solid 1px gray;
-  margin: 5px 0;
+.suprimir p {
+  color: red;
+  padding-bottom: 30px;
+}
+.delete {
+  width: 50%;
+  height: 100vh;
+  padding: 20px;
 }
 
-.cont_principal {
-  width: 80%;
+.img_delete {
+  background-image: url("https://res.cloudinary.com/dhtnbqsni/image/upload/v1611142477/proyecto_k/ilona1_ekv3yz.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

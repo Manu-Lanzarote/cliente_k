@@ -53,10 +53,12 @@ const Form = () => {
         <div className="col-lg-12 div_2 div_3">
           <label for="nombre">Intéressé par</label>
           <br />
-          <input className="check" name="wet" type="checkbox" /> {" Wet Suits "}
-          <input className="check" name="dry" type="checkbox" /> {" Dry Suits "}
+          <input className="check" name="wet" type="checkbox" /> {" Wetsuits "}
+          <input className="check" name="dry" type="checkbox" /> {" Shortys "}
           <input className="check" name="accesories" type="checkbox" />{" "}
-          {" Accesories "}
+          {" Tops "}
+          <br />
+          <br />
         </div>
         {/* Caja de texto */}
         <div className="col-lg-12 div_text">
@@ -65,14 +67,20 @@ const Form = () => {
         </div>
         {/* Button */}
         <div className="col-lg-3 div_2">
-          <button className="video btn_form" type="submit">
+          <button
+            className="video btn_form"
+            type="submit"
+            onClick={() => {
+              alert("VOTRE MESSAGE A ÉTÉ ENVOYÉ AVEC SUCCÈS");
+            }}
+          >
             Enviar
           </button>
         </div>
       </form>
-      <p>
+      {/* <p>
         {datos.nombre} {datos.apellido}
-      </p>
+      </p> */}
     </div>
   );
 };

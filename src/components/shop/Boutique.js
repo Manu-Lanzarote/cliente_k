@@ -1,18 +1,8 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Boutique = () => {
   const [data, setData] = useState([]);
-
-  // useEffect(function () {
-  //   fetch("http://localhost:3001/productos/")
-  //     .then(function (results) {
-  //       return results.json();
-  //     })
-  //     .then(function (data) {
-  //       //console.log(data);
-  //       setData(data);
-  //     });
-  // }, []);
 
   useEffect(() => {
     fetch("http://localhost:3001/productos/")
@@ -22,7 +12,9 @@ const Boutique = () => {
 
   const mostrarProductos = data.map((producto) => {
     return (
-      <div>
+      // Link para entrar en la página de producto único al hacer click en el producto.
+      // Para ello creo el componente DetalleProducto.js que es el que hará fetch al servidor. También tengo que crear un app.get en el servidor con la ruta.
+      <Link to={"/Boutique/" + producto._id}>
         <div key={producto.nombre} className="productos">
           <img
             src={producto.imagenes[0]}
@@ -33,7 +25,7 @@ const Boutique = () => {
           <h2>{producto.nombre}</h2>
           <p>A partir de {producto.precio} €</p>
         </div>
-      </div>
+      </Link>
     );
   });
 

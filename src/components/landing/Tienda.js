@@ -8,7 +8,7 @@ import Wetsuits from "../shop/Wetsuit";
 import Shorty from "../shop/Shorty";
 import Top from "../shop/Top";
 import BoutiquePage from "../shop/BoutiquePage";
-
+import DetalleProducto from "../single_product/DetalleProducto";
 const Tienda = () => {
   return (
     <>
@@ -37,6 +37,11 @@ const Tienda = () => {
           </Route>
           <Route exact path="/Tops">
             <Top />
+          </Route>
+          {/* RUTA PROVISIONAL - NO QUIERO QUE SE RENDERIZE AQUÍ SINO EN LA PÁGINA SingleMain.js
+          Ruta para entrar en la página de producto único cuando hago click en alguno de los productos de la página "Boutique en Ligne"*/}
+          <Route exact path="/Boutique/:id">
+            <DetalleProducto />
           </Route>
         </div>
       </BrowserRouter>
