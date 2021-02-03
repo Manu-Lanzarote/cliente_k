@@ -1,4 +1,5 @@
 import logo_kalypse from "./uploads_k/logo_kalypse.png";
+
 import { Link } from "react-router-dom";
 
 const MenuNav = () => {
@@ -19,31 +20,31 @@ const MenuNav = () => {
             </li>
             <hr />
             <li>
-              <Link to="./LaMarque" className="menu_link">
+              <Link to="/LaMarque" className="menu_link">
                 LA MARQUE
               </Link>
             </li>
             <hr />
             <li>
-              <Link to="./LaCollection" className="menu_link">
+              <Link to="/LaCollection" className="menu_link">
                 LA COLLECTION
               </Link>
             </li>
             <hr />
             <li>
-              <Link to="./Histoire" className="menu_link">
+              <Link to="/Histoire" className="menu_link">
                 HISTOIRE
               </Link>
             </li>
             <hr />
             <li>
-              <Link to="./Boutique" className="menu_link">
+              <Link to="/Boutique" className="menu_link">
                 BOUTIQUE EN LIGNE
               </Link>
             </li>
             <hr />
             <li>
-              <Link to="./Contact" className="menu_link">
+              <Link to="/Contact" className="menu_link">
                 CONTACT
               </Link>
             </li>

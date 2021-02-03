@@ -4,7 +4,7 @@ const Top = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/productos_top/")
+    fetch("/productos_top")
       .then((res) => res.json())
       .then((data) => setData(data));
   });

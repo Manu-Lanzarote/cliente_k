@@ -4,7 +4,7 @@ const Shorty = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/productos_shorty/")
+    fetch("http://localhost:3001/productos_shorty")
       .then((res) => res.json())
       .then((data) => setData(data));
   });

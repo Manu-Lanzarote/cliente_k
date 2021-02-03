@@ -147,6 +147,9 @@ hr {
   color: white;
   font-weight: bolder;
 }
+.video:hover {
+  background-color: #228aa1;
+}
 
 /* MODAL */
 .overlay {
@@ -337,6 +340,10 @@ hr {
 
 /* BOUTIQUE */
 
+.main_tienda {
+  background-color: white;
+}
+
 .boutique {
   background-color: white;
   display: grid;
@@ -465,8 +472,12 @@ hr {
 .btn_admin {
   margin-top: 20px;
   margin-right: 30px;
-  padding: 2px 5px;
+  padding: 3px 8px;
   border-radius: 5px;
+}
+
+.btn_admin.video:hover {
+  background-color: #228aa1;
 }
 
 /* PANEL DE CONTROL */
@@ -531,15 +542,13 @@ hr {
   display: flex;
   margin-top: 10px;
 }
+
 .update_pro {
   width: 70%;
 }
 
 .del {
   background-color: red;
-}
-.del:hover {
-  color: rgb(97, 97, 97);
 }
 
 .mostrar_producto {
@@ -644,4 +653,46 @@ a.noactivo {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+/* DetalleProducto.js */
+.detalle {
+  color: #181a1c;
+  display: flex;
+}
+.bloque_imagenes {
+  display: flex;
+}
+.miniaturas {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.miniaturas img {
+  width: 120px;
+  margin: 10px 0;
+  border: solid 0.5px gray;
+}
+.lateral h2,
+h4 {
+  color: gray;
+}
+
+.info {
+  background-color: white;
+  color: #181a1c;
+  margin: 30px;
+  padding: 20px;
+  border: 2px solid gray;
+  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+.info h4 {
+  font-weight: bold;
+}
+
+/* Icono carrito */
+.fa-cart-arrow-down {
+  color: white;
+  font-size: 20px;
 }

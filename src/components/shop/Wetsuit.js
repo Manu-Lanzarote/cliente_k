@@ -4,7 +4,7 @@ const Wetsuit = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/productos_wetsuit/")
+    fetch("http://localhost:3001/productos_wetsuit")
       .then((res) => res.json())
       .then((data) => setData(data));
   });

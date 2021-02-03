@@ -5,22 +5,22 @@ const ShopEnlaces = () => {
     <div className="menu_shop">
       <ul className="shop_enlaces">
         <li>
-          <Link to="./Boutique">BOUTIQUE</Link>
+          <Link to="/Boutique">BOUTIQUE</Link>
         </li>
         <li>
-          <Link to="./Femme">FEMME</Link>
+          <Link to="/Femme">FEMME</Link>
         </li>
         <li>
-          <Link to="./Homme">HOMME</Link>
+          <Link to="/Homme">HOMME</Link>
         </li>
         <li>
-          <Link to="./Wetsuits">WETSUITS</Link>
+          <Link to="/Wetsuits">WETSUITS</Link>
         </li>
         <li>
-          <Link to="./Shortys">SHORTYS</Link>
+          <Link to="/Shortys">SHORTYS</Link>
         </li>
         <li>
-          <Link to="./Tops">TOPS</Link>
+          <Link to="/Tops">TOPS</Link>
         </li>
       </ul>
     </div>

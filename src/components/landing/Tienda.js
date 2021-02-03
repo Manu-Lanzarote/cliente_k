@@ -1,4 +1,3 @@
-import LOGO_FINAL_KALYPSE_H from "./uploads_k/LOGO-FINAL-KALYPSE-H.png";
 import { BrowserRouter, Route } from "react-router-dom";
 import ShopEnlaces from "../shop/ShopEnlaces";
 import Boutique from "../shop/Boutique";
@@ -9,13 +8,12 @@ import Shorty from "../shop/Shorty";
 import Top from "../shop/Top";
 import BoutiquePage from "../shop/BoutiquePage";
 import DetalleProducto from "../single_product/DetalleProducto";
+import Detalle2 from "../single_product/Detalle2";
+
 const Tienda = () => {
   return (
-    <>
+    <div className="main_tienda">
       <BrowserRouter>
-        <div className="div_logo ">
-          <img src={LOGO_FINAL_KALYPSE_H} alt="Kalypse" className="img_hero" />
-        </div>
         <div className="header_shop">
           <ShopEnlaces />
         </div>
@@ -38,17 +36,17 @@ const Tienda = () => {
           <Route exact path="/Tops">
             <Top />
           </Route>
-          {/* RUTA PROVISIONAL - NO QUIERO QUE SE RENDERIZE AQUÍ SINO EN LA PÁGINA SingleMain.js
-          Ruta para entrar en la página de producto único cuando hago click en alguno de los productos de la página "Boutique en Ligne"*/}
+          {/* Ruta que muestra el detalle de cada producto */}
           <Route exact path="/Boutique/:id">
             <DetalleProducto />
           </Route>
         </div>
+        <Route exact path="/Boutique/:id">
+          <Detalle2 />
+        </Route>
       </BrowserRouter>
-      <div>
-        <BoutiquePage />
-      </div>
-    </>
+      <BoutiquePage />
+    </div>
   );
 };
 

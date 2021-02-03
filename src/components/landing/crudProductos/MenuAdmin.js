@@ -13,31 +13,31 @@ const MenuAdmin = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/lista_productos/" className="menu_link">
+              <Link to="/lista_productos" className="menu_link">
                 VOIR PRODUITS
               </Link>
             </li>
             <hr />
             <li>
-              <Link to="/nuevo_producto/" className="menu_link">
+              <Link to="/nuevo_producto" className="menu_link">
                 CRÉER PRODUIT
               </Link>
             </li>
             <hr />
             <li>
-              <Link to="/editar_producto/" className="menu_link">
+              <Link to="/editar_producto" className="menu_link">
                 MODIFIER PRODUIT
               </Link>
             </li>
             <hr />
             <li>
-              <Link to="/borrar_producto/" className="menu_link">
+              <Link to="/borrar_producto" className="menu_link">
                 SUPPRIMER PRODUIT
               </Link>
             </li>
             <hr />
             <li>
-              <a href="../" className="noactivo">
+              <a href="/" className="noactivo">
                 SORTIR
               </a>
             </li>

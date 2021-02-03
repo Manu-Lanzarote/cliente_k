@@ -4,7 +4,7 @@ const Femme = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/productos_femme/")
+    fetch("http://localhost:3001/productos_femme")
       .then((res) => res.json())
       .then((data) => setData(data));
   });
