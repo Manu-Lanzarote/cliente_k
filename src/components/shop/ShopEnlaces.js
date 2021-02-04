@@ -22,6 +22,16 @@ const ShopEnlaces = () => {
         <li>
           <Link to="/Tops">TOPS</Link>
         </li>
+        <li>
+          <Link to="/Boutique">
+            <i className="fas fa-street-view"> MON COMPTE</i>
+          </Link>
+        </li>
+        <li>
+          <Link to="/Boutique">
+            <i className="fas fa-shopping-cart"> (0)</i>
+          </Link>
+        </li>
       </ul>
     </div>
   );

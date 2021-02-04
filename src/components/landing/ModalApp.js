@@ -6,7 +6,7 @@ const ModalApp = () => {
     <div className="overlay">
       <div className="popup">
         <Link to="/">
-          <i class="far fa-times-circle"></i>
+          <i className="far fa-times-circle"></i>
         </Link>
         <Video />
       </div>

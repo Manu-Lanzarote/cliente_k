@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Femme = () => {
   const [data, setData] = useState([]);
@@ -11,18 +12,21 @@ const Femme = () => {
 
   const mostrarProductos = data.map((producto) => {
     return (
-      <div>
-        <div key={producto.nombre} className="productos">
-          <img
-            src={producto.imagenes[0]}
-            alt={producto.nombre}
-            height="250px"
-            className="imagen"
-          />
-          <h2>{producto.nombre}</h2>
-          <p>A partir de {producto.precio} €</p>
+      // Link a /Boutique/:id para que se muestre el DetalleProducto.js (la vista de comprar producto)
+      <Link to={"/Boutique/" + producto._id}>
+        <div>
+          <div key={producto.nombre} className="productos">
+            <img
+              src={producto.imagenes[0]}
+              alt={producto.nombre}
+              height="250px"
+              className="imagen"
+            />
+            <h2>{producto.nombre}</h2>
+            <p>A partir de {producto.precio} €</p>
+          </div>
         </div>
-      </div>
+      </Link>
     );
   });
 

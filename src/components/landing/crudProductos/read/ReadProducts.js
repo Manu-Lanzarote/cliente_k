@@ -1,8 +1,6 @@
 // EXPLICANDO ESTE CÓDIGO.
 
-// La función principal del componente es renderizar las miniaturas de todos los productos por pantalla para que el usuario pueda elegir entre ver cada producto, modificarlo o eliminarlo.
-
-//Los botones de modificar y eliminar son componentes hijo que importamos dentro de este componente padre
+// La función principal del componente es renderizar las miniaturas de todos los productos por pantalla para que el usuario pueda ver el detalle de cada producto.
 
 //Tengo dos variables de estado:
 //data, setData para para sacar un array que renderize todos los productos y nombre, setNombre  para renderizar los datos del producto que clicka el usuario, (por defecto pinta en pantalla "COMBINAISON LADYSKAF")

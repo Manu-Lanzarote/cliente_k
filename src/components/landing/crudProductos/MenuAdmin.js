@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const MenuAdmin = () => {
   return (
-    <div>
+    <div className="menu_a">
       <div className="contenedor_menu_imagen">
         <a href="../">
           <img src={logo_kalypse} width="200" className="logo" alt="Kalypse" />

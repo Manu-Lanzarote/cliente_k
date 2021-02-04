@@ -170,6 +170,7 @@ hr {
   font-size: 25px;
   text-align: right;
   margin-right: -60px;
+  margin-top: -50px;
   cursor: pointer;
   color: white;
 }
@@ -669,10 +670,16 @@ a.noactivo {
   padding-top: 10px;
 }
 .miniaturas img {
-  width: 120px;
-  margin: 10px 0;
+  width: 100px;
+  margin: 5px 0;
   border: solid 0.5px gray;
 }
+
+.principal {
+  width: 500px;
+  height: 500px;
+}
+
 .lateral h2,
 h4 {
   color: gray;
@@ -692,7 +699,12 @@ h4 {
 }
 
 /* Icono carrito */
-.fa-cart-arrow-down {
+.fa-shopping-cart,
+.fa-street-view {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
+}
+
+.fa-street-view:hover {
+  color: #29b3d2;
 }
